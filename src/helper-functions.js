@@ -1,4 +1,5 @@
-import { homepage } from "./pages/homepage";
+// import { homepage } from "./pages/homepage";
+// import { header } from "./components/header";
 
 export const elementCreate = (elementType, className, text = "") => {
 	const element = document.createElement(elementType);
@@ -15,12 +16,13 @@ export const appendChildBundle = (target, element) => {
 	return target;
 };
 
-export const pageHandler = (page = homepage) => {
-	const parent = document.querySelector(".content");
+// export const pageHandler = (page = homepage) => {
+// 	const parent = document.querySelector(".content");
 
-	while (parent.firstChild) {
-		parent.removeChild(parent.firstChild);
-	}
+// 	while (parent.firstChild) {
+// 		parent.removeChild(parent.firstChild);
+// 	}
 
-	parent.appendChild(page());
-};
+// 	parent.appendChild(header());
+// 	parent.appendChild(page());
+// };
